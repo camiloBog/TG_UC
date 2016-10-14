@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+
+<body>
+
+	<div ng-app = "mainApp" >
+    	<div ng-include="'modules/mainPage/header.html'"></div>
+    	<div ng-include="'modules/mainPage/contenido.html'"></div>
+		<div ng-include="'modules/mainPage/footer.html'"></div>
+	</div>
+	
+	<script src="assets/css/5grid/jquery.js"></script>
+	<script src="assets/css/5grid/init.js?use=mobile,desktop,1000px&amp;mobileUI=1&amp;mobileUI.theme=none"></script>
+	
+	<script src="assets/js/angular.min.js"></script>
+	<script src="assets/js/angular-route.min.js"></script>
+	
+	<script>
+         var mainApp = angular.module("mainApp", []);    
+	</script>
+	
+</body>
+</html>
+

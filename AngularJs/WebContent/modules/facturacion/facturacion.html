@@ -1,0 +1,214 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Manejo de Stocks</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <noscript>
+        <link rel="stylesheet" href="assets/css/5grid/core.css">
+        <link rel="stylesheet" href="assets/css/5grid/core-desktop.css">
+        <link rel="stylesheet" href="assets/css/5grid/core-1200px.css">
+        <link rel="stylesheet" href="assets/css/5grid/core-noscript.css">
+        <link rel="stylesheet" href="assets/css/style-desktop.css">   
+        </noscript>
+        
+    </head>
+    <body> 
+
+  <div id="header-wrapper">
+  <header id="header" class="5grid-layout">
+    <div class="row">
+      <div class="12u" id="logo">
+        <!-- Logo -->
+        <h1><a href="#" class="mobileUI-site-name">Manejo de Stocks</a></h1>
+        <p align="right">Camilo Bustamante</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="12u" id="menu">
+        <nav>
+    <ul>
+        <li><a href="#">Configuracion</a></li>
+        <li><a href="#">Compras</a>
+            <ul>
+                <li><a href="#">Compras1</a></li>
+                <br>
+                <li><a href="#">Compras2</a></li>
+                <br>
+                <li><a href="#">Compras3</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Indicadores</a></li>
+        <li><a href="#">Salir</a></li>
+    </ul>
+</nav>
+      </div>
+    </div>
+  </header>
+</div>
+        <div id="page-wrapper">
+            <div class="5grid-layout">
+                <div id="feature-content">
+                    <section>
+                        <h2 align="center">FACTURACIÓN</h2>
+                    </section>
+                    <div >
+                      <form action="" method="POST">    
+                            <label class="formulario">Cliente: </label>
+                            <input type="text"  class="buscar-consultor"  id="buscar-consultor" name="usuario" value="" />
+                            <br/>
+                             <label class="formulario">Razon Social:  </label>
+                            <input type="password" class="buscar-consultor1" /><br/>
+                            <label class="formulario">Identificacion:  </label>
+                            <input type="password" class="buscar-consultor2"/>
+                             <select name="tipo_identificacion" class="buscar-consultor7">
+                                    <option>Tipo de Identificación</option>
+                                    <option>Cedula de Ciudadania </option>
+                                    <option>Cedula de Extranjeria</option>
+                             </select>
+                             <br />
+                            <label class="formulario">Telefono:</label>
+                            <input type="text" class="buscar-consultor3"/>
+                            <input type="text" class="buscar-consultor31" placeholder="Dirección"  />
+                            <br>
+                            <label class="formulario">Correo:</label>
+                            <input type="text" class="buscar-consultor4" id="edad" name="edad" />
+                                                        
+                        </form>  
+                    </div>
+                    <!--/*<div class="row">
+                        <div class="11u">
+
+                            <form id="form" name="form" class="buscar-consultor" action="buscar.php" method="POST" >
+                                <div class="5u">
+                                <b>Cliente</b> 
+                                </div>
+                                <input  class="buscar" type="text" placeholder="Buscar" onkeydown="">
+                                Factura
+                            </form>
+                            <form id="form" name="form" class="buscar-consultor1" action="buscar.php" method="POST" >
+                                <div class="5u">
+                                <b>Razon Social</b> 
+                                </div>
+                                <input type="text">
+                            </form>
+                            <form id="form" name="form" class="buscar-consultor2" action="buscar.php" method="POST" >
+                                <div class="5u">
+                                <b>Identificacion</b>
+                                </div>
+                                <input type="text" placeholder="" onkeydown="">
+                                <select name="tipo_identificacion" class="buscar-consultor2">
+                                    <option>Tipo de Identificación</option>
+                                    <option>Cedula de Ciudadania </option>
+                                    <option>Cedula de Extranjeria</option>
+                                </select>
+                            </form>
+                            <form id="form" name="form" class="buscar-consultor3" action="buscar.php" method="POST" >
+                                <div class="5u">
+                                <b>Telefono</b>
+                                </div>
+                                <input type="text" placeholder="" onkeydown="">
+                                <b style="margin-right: 3%;">Dirección</b> <input type="text" placeholder="" onkeydown="" class="buscar-consultor6">
+                            </form>
+                            <form id="form" name="form" class="buscar-consultor4" action="buscar.php" method="POST" >
+                                <div class="5u">
+                                <b>Correo</b>
+                                </div>
+                                <input type="text" placeholder="" onkeydown="">
+                            </form>
+                        </div>
+
+
+                    </div>*/-->
+
+
+                </div>
+                <table>
+                    <tr>
+                        <th>Buscar Producto</th>
+                        <th>Codigo</th>
+                        <th>Descripcion</th>
+                        <th>Cantidad</th>
+                        <th>Eliminar</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <form id="form" name="form" class="buscar-consultor5" action="buscar.php" method="POST" >
+                                <input  class="buscar1" type="text" placeholder="Buscar" onkeydown="">
+                            </form>
+                        </td>
+                        <td>9868su9u</td>
+                        <td>Producto1</td>
+                        <td>751</td>
+                        <td><center><img src="assets/img/eliminar.png" style="width: 26px;height: 27px;padding: 0px 3px !important;margin-bottom: -9px;"></center></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <form id="form" name="form" class="buscar-consultor5" action="buscar.php" method="POST" >
+                                <input  class="buscar1" type="text" placeholder="Buscar" onkeydown="">
+                            </form>
+                        </td>
+                        <td>9868su9u</td>
+                        <td>Producto2</td>
+                        <td>45</td>
+                        <td><center><img src="assets/img/eliminar.png" style="width: 26px;height: 27px;padding: 0px 3px !important;margin-bottom: -9px;"></center></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <form id="form" name="form" class="buscar-consultor5" action="buscar.php" method="POST" >
+                                <input  class="buscar1" type="text" placeholder="Buscar" onkeydown="">
+                            </form>
+                        </td>
+                        <td>9868su9u</td>
+                        <td>Producto3</td>
+                        <td>34</td>
+                        <td><center><img src="assets/img/eliminar.png" style="width: 26px;height: 27px;padding: 0px 3px !important;margin-bottom: -9px;"></center></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <form id="form" name="form" class="buscar-consultor5" action="buscar.php" method="POST" >
+                                <input  class="buscar1" type="text" placeholder="Buscar" onkeydown="">
+                            </form>
+                        </td>
+                        <td>9868su9u</td>
+                        <td>Producto4</td>
+                        <td>345</td>
+                        <td><center><img src="assets/img/eliminar.png" style="width: 26px;height: 27px;padding: 0px 3px !important;margin-bottom: -9px;"></center></td>
+                    </tr>
+                    <tr>
+                        <td align="center"> <form id="form" name="form" class="buscar-consultor5" action="buscar.php" method="POST" >
+                                <input class="buscar1" type="text" placeholder="Buscar" onkeydown="">
+                            </form>
+                        </td>
+                        <td>9868su9u</td>
+                        <td>Producto5</td>
+                        <td>34</td>
+                        <td><center><img src="assets/img/eliminar.png" style="width: 26px;height: 27px;padding: 0px 3px !important;margin-bottom: -9px;"></center></td>
+                    </tr>
+                </table>   
+                <div class="2u">
+                    <p class="button-style"><a href="#">Agregar Producto</a></p>
+                </div>
+                <div class="3u">
+                    <p class="button-style1" align="center"><a href="#">Cancelar</a></p>
+                </div>
+                <div class="2u">
+                    <p class="button-style2" ><a href="#">Facturar</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="5grid-layout">
+            <div id="copyright">
+                <section>
+                    <p>&copy; UNIVERSIDAD CENTRAL <a target="_blank" href="http://fotogrph.com/"></a></p>
+                </section>
+            </div>
+        </div>
+        <script type="text/javascript" src="assets/js/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript" src="assets/js/jquery-ui.js"></script>
+        <script src="assets/css/5grid/jquery.js"></script>
+        <script src="assets/css/5grid/init.js?use=mobile,desktop,1000px&amp;mobileUI=1&amp;mobileUI.theme=none"></script>
+
+    </body>
+</html>
