@@ -8,28 +8,13 @@
 	
 	
 	<div ng-include="'modules/mainPage/header.html'"></div>
-
-	<div class="row">
-		<div class="12u" id="menu">
-			<nav>
-				<ul>
-					<li><a href="#">Configuracion</a></li>
-					<li><a href="#">Compras</a>
-						<ul>
-							<li><a href="#ordenCompra">Orden de Compra</a></li><br>
-							<li><a href="#regitraEntrada">Registro de Entrada</a></li><br>
-							<li><a href="#inventario">Ver Inventario</a></li>
-						</ul></li>
-					<li><a href="#">Indicadores</a></li>
-					<li><a href="#">Salir</a></li>
-				</ul>
-			</nav>
-		</div>
-		<div ng-view></div>
-	</div>
 	
-	<script src="assets/css/5grid/jquery.js"></script>
-	<script src="assets/css/5grid/init.js?use=mobile,desktop,1000px&amp;mobileUI=1&amp;mobileUI.theme=none"></script>
+	<div ng-include="'modules/mainPage/menu.html'"></div>
+
+	
+	
+	<!--script src="assets/css/5grid/jquery.js"></script>
+	<script src="assets/css/5grid/init.js?use=mobile,desktop,1000px&amp;mobileUI=1&amp;mobileUI.theme=none"></script-->
 	
 	<script src="assets/js/angular.min.js"></script>
 	<script src="assets/js/angular-route.min.js"></script>
