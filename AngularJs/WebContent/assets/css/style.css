@@ -72,11 +72,11 @@ a {
 
 #copyright {
 	overflow: hidden;
-	height: 50px;
+	height: 35px;
 }
 
 #copyright p {
-	padding: 15px 0px 0px 0px;
+	padding: 5px 0px 0px 0px;
 	text-align: center;
 	font-size: 11pt;
 	color: #4F4F4F;
@@ -161,8 +161,8 @@ a {
 
 .button-style a {
 	display: inline-block;
-	width: 174px;
-	height: 30px;
+	width: 140px;
+	height: 27px;
 	margin-top: 21px;
 	background: url(images/img04.jpg) no-repeat left top;
 	line-height: 30px;
@@ -171,7 +171,7 @@ a {
 	text-transform: uppercase;
 	font-family: 'Oswald', sans-serif;
 	font-weight: 200;
-	font-size: 14pt;
+	font-size: 11pt;
 	color: #DDDDDD;
 }
 
@@ -179,8 +179,8 @@ a {
 
 .button-style1 a {
 	display: inline-block;
-	width: 174px;
-	height: 30px;
+	width: 140px;
+	height: 27px;
 	margin-top: 20px;
 	background: url(images/img04.jpg) no-repeat left top;
 	line-height: 30px;
@@ -189,13 +189,13 @@ a {
 	text-transform: uppercase;
 	font-family: 'Oswald', sans-serif;
 	font-weight: 200;
-	font-size: 14pt;
+	font-size: 11pt;
 	color: #DDDDDD;
 }
 .button-style2 a {
 	display: inline-block;
-	width: 174px;
-	height: 30px;
+	width: 140px;
+	height: 27px;
 	margin-top: 21px;
 	background: url(images/img04.jpg) no-repeat left top;
 	line-height: 30px;
@@ -204,7 +204,7 @@ a {
 	text-transform: uppercase;
 	font-family: 'Oswald', sans-serif;
 	font-weight: 200;
-	font-size: 14pt;
+	font-size: 11pt;
 	color: #DDDDDD;
 }
 
@@ -216,7 +216,7 @@ a {
         text-transform: uppercase;
         font-family: 'Oswald', sans-serif;
         font-weight: 200;
-		font-size: 14pt;
+		font-size: 11pt;
         color: rgba(220,220,197,0.7);
     }
 
@@ -228,7 +228,7 @@ a {
     text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
     font-weight: 200;
-	font-size: 14pt;
+	font-size: 11pt;
     color: rgba(220,220,197,0.7);
 }
 
@@ -240,7 +240,7 @@ a {
     text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
     font-weight: 200;
-	font-size: 14pt;
+	font-size: 11pt;
     color: rgba(220,220,197,0.7);
 }
 
@@ -259,8 +259,40 @@ form {
 @media (max-width: 1127px) {
 
 table {
-    width: 85% !important;
-   margin-left: 82px;
+    width: 93% !important;
+   margin-left: 38px;
+}
+#header {
+
+    height: 40%;
+}
+.buscar-consultor7 {
+    width: 18% !important;   
+}
+#logo p {
+    margin-left: 74% !important;
+}
+
+.button-style a {
+	width: 157px;
+    margin-left: 60px;
+}
+.button-style1 a {
+	width: 157px;
+    margin-left: 70px;
+}
+.button-style2 a {
+	width: 157px;
+}
+
+
+}
+
+@media (max-width: 1060px) {
+
+table {
+    width: 89% !important;
+   margin-left: 38px;
 }
 #header {
 
