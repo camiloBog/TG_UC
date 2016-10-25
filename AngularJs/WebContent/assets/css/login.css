@@ -1,43 +1,44 @@
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300);
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-weight: 300;
-}
-body {
+/* @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300); */
+/* * { */
+/*   box-sizing: border-box; */
+/*   margin: 0; */
+/*   padding: 0; */
+/*   font-weight: 300; */
+/* } */
+
+.loginBody {
    background: #090909 url(images/img02.png) repeat;
   font-family: 'Source Sans Pro', sans-serif;
   color: white;
   font-weight: 300;
 }
-body ::-webkit-input-placeholder {
+.loginBody ::-webkit-input-placeholder {
   /* WebKit browsers */
   font-family: 'Source Sans Pro', sans-serif;
   color: white;
   font-weight: 300;
 }
-body :-moz-placeholder {
+.loginBody :-moz-placeholder {
   /* Mozilla Firefox 4 to 18 */
   font-family: 'Source Sans Pro', sans-serif;
   color: white;
   opacity: 1;
   font-weight: 300;
 }
-body ::-moz-placeholder {
+.loginBody ::-moz-placeholder {
   /* Mozilla Firefox 19+ */
   font-family: 'Source Sans Pro', sans-serif;
   color: white;
   opacity: 1;
   font-weight: 300;
 }
-body :-ms-input-placeholder {
+.loginBody :-ms-input-placeholder {
   /* Internet Explorer 10+ */
   font-family: 'Source Sans Pro', sans-serif;
   color: white;
   font-weight: 300;
 }
-.wrapper {
+.loginWrapper {
   background: #515050;
   background: -webkit-linear-gradient(top left, #50a3a2 0%, #53e3a6 100%);
   background: linear-gradient(to bottom right, black 0%, #7F7B7B 100%);
@@ -49,18 +50,18 @@ body :-ms-input-placeholder {
   margin-top: -200px;
   overflow: hidden;
 }
-.wrapper.form-success .container h1 {
+.loginWrapper.form-success .loginContainer .loginH1 {
   -webkit-transform: translateY(85px);
           transform: translateY(85px);
 }
-.container {
+.loginContainer {
   max-width: 600px;
   margin: 0 auto;
   padding: 80px 0;
   height: 400px;
   text-align: center;
 }
-.container h1 {
+.loginContainer .loginH1 {
   font-size: 40px;
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
@@ -68,12 +69,12 @@ body :-ms-input-placeholder {
           transition-timing-function: ease-in-put;
   font-weight: 200;
 }
-form {
+.loginForm {
   padding: 20px 0;
   position: relative;
   z-index: 2;
 }
-form input {
+.loginForm .loginInput {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -92,15 +93,15 @@ form input {
           transition-duration: 0.25s;
   font-weight: 300;
 }
-form input:hover {
+.loginForm .loginInput:hover {
   background-color: rgba(255, 255, 255, 0.4);
 }
-form input:focus {
+.loginForm .loginInput:focus {
   background-color: white;
   width: 300px;
   color: #515050;
 }
-form button {
+.loginForm .loginButton {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -116,7 +117,7 @@ form button {
   -webkit-transition-duration: 0.25s;
           transition-duration: 0.25s;
 }
-form button:hover {
+.loginForm .loginButton:hover {
   background-color: #f5f7f9;
 }
 .bg-bubbles {
