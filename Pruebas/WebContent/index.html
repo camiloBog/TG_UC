@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta charset="utf-8" />
+    <title>Aplicacion</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+</head>
+<body>
+
+    <div class="jumbotron">
+        <div class="container">
+            <div class="col-xs-offset-2 col-xs-8">
+                <div ng-view></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="assets/js/jquery-2.2.4.min.js"></script>
+    <script src="assets/js/angular.min.js"></script>
+    <script src="assets/js/angular-route.min.js"></script>
+    <script src="assets/js/angular-cookies.min.js"></script>
+    <script src="assets/js/angular-animate.min.js"></script>
+    
+    <script src="assets/controllers/index.js"></script>
+    <script src="assets/controllers/services.js"></script>
+    <script src="assets/controllers/login.js"></script>
+    <script src="assets/controllers/modulos.js"></script>
+
+</body>
+</html>
