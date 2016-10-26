@@ -7,27 +7,52 @@
 		<link rel="stylesheet" type="text/css" href="assets/css/login.css">
 	</head>
 	
-	<body ng-app="mainApp">
+	<body ng-app="mainApp" ng-init="login=true" ng-controller="loginController">
 	
-			<div ng-include="'modules/mainPage/login.html'"></div>
+		<div ng-hide="login" id="header-wrapper">
+			<header id="header" class="5grid-layout">
+				<div ng-include="'modules/mainPage/header.html'"></div><br>
+				<div ng-include="'modules/mainPage/menu.html'"></div>
+			</header>
+		</div>
+	
+		<div ng-hide="login" id="page-wrapper">
+			<div class="5grid-layout" ng-view></div>
+		</div>
+	
+		<div ng-hide="login" id="footer-wrapper" class="5grid-layout">
+			<div ng-include="'modules/mainPage/footer.html'"></div>
+		</div>
 		
-<!-- 		<div hidden="true"> -->
-			<div id="header-wrapper">
-				<header id="header" class="5grid-layout">
-					<div ng-include="'modules/mainPage/header.html'"></div>
-					<div ng-include="'modules/mainPage/menu.html'"></div>
-				</header>
+<!--	<div ng-show="login" ng-include="'modules/mainPage/login.html'"></div> -->
+		<div ng-show="login" class="loginWrapper">
+			<div class="loginContainer">
+				<h1 class="loginH1">Bienvenido... {{nombre}}</h1>
+	
+				<form class="loginForm">
+					<input type="text" class="loginInput" placeholder="Username">
+					<input type="password" class="loginInput" placeholder="Password">
+<!--				<button ng-click="login = !login" type="submit" id="login-button" class="loginButton">Login</button> -->
+<!-- 					<input ng-click="login = !login" type="button" value="Login" class="loginButton"> -->
+					<input ng-click="myFunction()" type="button" value="Login" class="loginButton">
+				</form>
 			</div>
-			
-			<div id="page-wrapper">
-				<div class="5grid-layout" ng-view></div>
-			</div>
-		
-			<div id="footer-wrapper" class="5grid-layout">
-				<div ng-include="'modules/mainPage/footer.html'"></div>
-			</div>
-<!-- 		</div> -->
-		
+			<ul class="bg-bubbles">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+	
+	
 		<script src="assets/css/5grid/jquery.js"></script>
 		<script src="assets/css/5grid/init.js?use=mobile,desktop,1000px&amp;mobileUI=1&amp;mobileUI.theme=none"></script>
 		<script src="assets/js/angular.min.js"></script>
@@ -51,11 +76,26 @@
 					templateUrl : 'modules/compras/registroEntrada.html',
 				}).
 				
+				when('/login', {
+					templateUrl : 'modules/mainPage/login.html',
+				}).
+				
 				otherwise({
-					redirectTo : '/inventario'
+					redirectTo : '/regitraEntrada'
 				});
 	
-			} ]);
+			} ])
+			
+			.controller('loginController', function($scope) {
+		    
+		    $scope.myFunction = function() {
+		        $scope.nombre = "Camilo";
+		        login = !login;
+		    }
+		});
+
+			
+			
 		</script>
 
 	</body>
