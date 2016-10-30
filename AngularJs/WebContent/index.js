@@ -10,30 +10,40 @@ var mainApp = angular.module("mainApp", [ 'ngRoute' ]);
 
 mainApp.config([ '$routeProvider', function($routeProvider) {
 
-	$routeProvider.when('/inventario', {
-		templateUrl : 'modules/compras/inventario.html'
+	$routeProvider.
+	
+	when('/tenant', {
+		templateUrl : 'modules/configuracion/tenant.html'
 	}).
-
-	when('/ordenCompra', {
-		templateUrl : 'modules/compras/ordenCompra.html'
+	
+	when('/usuario', {
+		templateUrl : 'modules/configuracion/usuario.html'
 	}).
-
-	when('/regitraEntrada', {
-		templateUrl : 'modules/compras/registroEntrada.html'
+	
+	when('/inventario', {
+		templateUrl : 'modules/consultas/inventario.html'
 	}).
-
-	when('/compras', {
-		templateUrl : 'modules/facturacion/compras.html'
+	
+	when('/ventas', {
+		templateUrl : 'modules/consultas/ventas.html'
 	}).
-
+	
 	when('/facturacion', {
 		templateUrl : 'modules/facturacion/facturacion.html'
 	}).
-
-	when('/registro', {
-		templateUrl : 'modules/facturacion/registro.html'
+	
+	when('/ingreso', {
+		templateUrl : 'modules/inventario/ingreso.html'
 	}).
-
+	
+	when('/productos', {
+		templateUrl : 'modules/inventario/productos.html'
+	}).
+	
+	when('/proveedores', {
+		templateUrl : 'modules/inventario/proveedores.html'
+	}).
+	
 	when('/login', {
 		templateUrl : 'modules/mainPage/login.html',
 		controller: "loginController"
@@ -50,9 +60,18 @@ mainApp.config([ '$routeProvider', function($routeProvider) {
 } ])
 
 .controller('loginController', function($scope) {
+	$scope.myFunction = function() {
+		
+		//alert("myFunction " + $scope.login);
+		
+	    $scope.nombre = "Camilo";
+	    
+	    $scope.login = !$scope.login;
+	}
+})
 
-$scope.myFunction = function() {
-    $scope.nombre = "Camilo";
-    login = !login;
-}
-});
+
+;
+
+
+
