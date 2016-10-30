@@ -1,12 +1,13 @@
 <div class="loginWrapper">
 	<div class="loginContainer">
-		<h1 class="loginH1">Bienvenido...</h1>
+		<h1 class="loginH1">Bienvenido... {{nombre}}</h1>
 
 		<form class="loginForm">
 			<input type="text" class="loginInput" placeholder="Username">
 			<input type="password" class="loginInput" placeholder="Password">
 <!-- 			<button ng-click="login = !login" type="submit" id="login-button" class="loginButton">Login</button> -->
-			<input ng-click="login = !login" type="button" value="Login" class="loginButton">
+<!-- 			<input ng-click="login = !login" type="button" value="Login" class="loginButton"> -->
+			<input ng-click="myFunction()" type="button" value="Login" class="loginButton">
 		</form>
 	</div>
 	<ul class="bg-bubbles">

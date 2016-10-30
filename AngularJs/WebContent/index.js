@@ -11,15 +11,15 @@ var mainApp = angular.module("mainApp", [ 'ngRoute' ]);
 mainApp.config([ '$routeProvider', function($routeProvider) {
 
 	$routeProvider.when('/inventario', {
-		templateUrl : 'modules/compras/inventario.html'
+		templateUrl : 'modules/inventario/inventario.html'
 	}).
 
 	when('/ordenCompra', {
-		templateUrl : 'modules/compras/ordenCompra.html'
+		templateUrl : 'modules/inventario/ordenCompra.html'
 	}).
 
 	when('/regitraEntrada', {
-		templateUrl : 'modules/compras/registroEntrada.html'
+		templateUrl : '/AngularJs/WebContent/modules/inventario/registroEntrada.html'
 	}).
 
 	when('/compras', {
@@ -51,8 +51,15 @@ mainApp.config([ '$routeProvider', function($routeProvider) {
 
 .controller('loginController', function($scope) {
 
-$scope.myFunction = function() {
-    $scope.nombre = "Camilo";
-    login = !login;
-}
+	$scope.myFunction = function() {
+	    $scope.nombre = "Camilo";
+	    $scope.login = !$scope.login;
+	}
 });
+
+
+
+
+
+
+
