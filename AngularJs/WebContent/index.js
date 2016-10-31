@@ -1,10 +1,3 @@
-//$("#login-button").click(function(event){
-//		 event.preventDefault();
-//	 
-//	 $('form').fadeOut(500);
-//	 $('.wrapper').addClass('form-success');
-//});
-
 
 var mainApp = angular.module("mainApp", [ 'ngRoute' ]);
 
@@ -45,8 +38,7 @@ mainApp.config([ '$routeProvider', function($routeProvider) {
 	}).
 	
 	when('/login', {
-		templateUrl : 'modules/mainPage/login.html',
-		controller: "loginController"
+		templateUrl : 'modules/mainPage/login.html'
 	}).
 	
 	when('/home', {
@@ -60,18 +52,11 @@ mainApp.config([ '$routeProvider', function($routeProvider) {
 } ])
 
 .controller('loginController', function($scope) {
-	$scope.myFunction = function() {
-		
-		//alert("myFunction " + $scope.login);
-		
-	    $scope.nombre = "Camilo";
-	    
+	$scope.loginFunction = function() {
 	    $scope.login = !$scope.login;
 	}
 })
 
 
+
 ;
-
-
-
