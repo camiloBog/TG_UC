@@ -1,44 +1,73 @@
+'use strict';
 
-var mainApp = angular.module("mainApp", [ 'ngRoute' ]);
+// declaracion de modulos modules
+angular.module('tenan', []);
+angular.module('usuario', []);
+angular.module('inventario', []);
+angular.module('ventas', []);
+angular.module('facturacion', []);
+angular.module('ingreso', []);
+angular.module('productos', []);
+angular.module('proveedores', []);
+angular.module('login', []);
 
+// se agregan los modulos
+var mainApp = angular.module('mainApp', [
+    'ngRoute', 'tenan',
+    'usuario', 'inventario',
+    'ventas', 'facturacion',
+    'ingreso', 'productos',
+    'proveedores', 'login'
+]);
+
+// enrutamiento
 mainApp.config([ '$routeProvider', function($routeProvider) {
 
 	$routeProvider.
 	
-	when('/tenant', {
-		templateUrl : 'modules/configuracion/tenant.html'
+	when('/tenan', {
+		templateUrl : 'modules/configuracion/tenan.html',
+		controller: "tenanController"
 	}).
 	
 	when('/usuario', {
-		templateUrl : 'modules/configuracion/usuario.html'
+		templateUrl : 'modules/configuracion/usuario.html',
+		controller: "usuarioController"
 	}).
 	
 	when('/inventario', {
-		templateUrl : 'modules/consultas/inventario.html'
+		templateUrl : 'modules/consultas/inventario.html',
+		controller: "inventarioController"
 	}).
 	
 	when('/ventas', {
-		templateUrl : 'modules/consultas/ventas.html'
+		templateUrl : 'modules/consultas/ventas.html',
+		controller: "ventasController"
 	}).
 	
 	when('/facturacion', {
-		templateUrl : 'modules/facturacion/facturacion.html'
+		templateUrl : 'modules/facturacion/facturacion.html',
+		controller: "facturacionController"
 	}).
 	
 	when('/ingreso', {
-		templateUrl : 'modules/inventario/ingreso.html'
+		templateUrl : 'modules/inventario/ingreso.html',
+		controller: "ingresoController"
 	}).
 	
 	when('/productos', {
-		templateUrl : 'modules/inventario/productos.html'
+		templateUrl : 'modules/inventario/productos.html',
+		controller: "productosController"
 	}).
 	
 	when('/proveedores', {
-		templateUrl : 'modules/inventario/proveedores.html'
+		templateUrl : 'modules/inventario/proveedores.html',
+		controller: "proveedoresController"
 	}).
 	
 	when('/login', {
-		templateUrl : 'modules/mainPage/login.html'
+		templateUrl : 'modules/mainPage/login.html',
+		controller: "loginController"
 	}).
 	
 	when('/home', {
@@ -49,14 +78,4 @@ mainApp.config([ '$routeProvider', function($routeProvider) {
 		redirectTo : '/home'
 	});
 
-} ])
-
-.controller('loginController', function($scope) {
-	$scope.loginFunction = function() {
-	    $scope.login = !$scope.login;
-	}
-})
-
-
-
-;
+} ]);

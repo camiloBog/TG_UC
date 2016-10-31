@@ -20,12 +20,8 @@
 			<div class="5grid-layout" ng-view></div>
 		</div>
 	
-		<div ng-hide="login" id="footer-wrapper" class="5grid-layout">
-			<div ng-include="'modules/mainPage/footer.html'"></div>
-		</div>
-		
+		<div ng-hide="login" class="5grid-layout" ng-include="'modules/mainPage/footer.html'"></div>
 		<div ng-show="login" ng-include="'modules/mainPage/login.html'"></div>
-	
 	
 		<script src="assets/css/5grid/jquery.js"></script>
 		<script src="assets/css/5grid/init.js?use=mobile,desktop,1000px&amp;mobileUI=1&amp;mobileUI.theme=none"></script>
@@ -33,6 +29,15 @@
 		<script src="assets/js/angular-route.min.js"></script>
 		
 		<script src="index.js"></script>
+		<script src="modules/configuracion/tenanController.js"></script>
+		<script src="modules/configuracion/usuarioController.js"></script>
+		<script src="modules/consultas/inventarioController.js"></script>
+		<script src="modules/consultas/ventasController.js"></script>
+		<script src="modules/facturacion/facturacionController.js"></script>
+		<script src="modules/inventario/ingresoController.js"></script>
+		<script src="modules/inventario/productosController.js"></script>
+		<script src="modules/inventario/proveedoresController.js"></script>
+		<script src="modules/mainPage/loginController.js"></script>
 		
 	</body>
 </html>
