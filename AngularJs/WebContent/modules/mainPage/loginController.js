@@ -7,6 +7,6 @@ angular.module('login')
 	
 	$scope.loginFunction = function() {
 	    $scope.login = !$scope.login;
-	}
+	};
 	
 });
