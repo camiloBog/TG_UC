@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html >
+<head>
+     
+</head>
+<body ng-app="">
+
+	<div ng-init="mySwitch=true">
+		
+		<div ng-show="mySwitch">
+	    	<h1>Contenido 1</h1>
+	    	<input type="button" value="Boton1" ng-click="mySwitch = !mySwitch" />
+	    	
+	    </div>
+	    
+	    <div ng-hide="mySwitch">
+	    	<h1>Segundo Contenido</h1>
+	    	<input type="button" value="Boton2" ng-click="mySwitch = !mySwitch" />
+	    </div>
+	    
+	    <h1>{{mySwitch}}</h1>
+	</div>
+	
+	<script src="assets/js/angular.min.js"></script>
+
+</body>
+</html>
