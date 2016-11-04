@@ -13,11 +13,11 @@ angular.module('login', []);
 
 // se agregan los modulos
 var mainApp = angular.module('mainApp', [
-    'ngRoute', 'tenan',
-    'usuario', 'inventario',
-    'ventas', 'facturacion',
-    'ingreso', 'productos',
-    'proveedores', 'login'
+    'ngRoute', 'ngResource', 
+    'servicio',
+    'tenan', 'usuario', 'inventario', 
+    'ventas', 'facturacion', 'ingreso', 
+    'productos', 'proveedores', 'login'
 ]);
 
 // enrutamiento
@@ -71,7 +71,8 @@ mainApp.config([ '$routeProvider', function($routeProvider) {
 	}).
 	
 	when('/home', {
-		templateUrl : 'modules/mainPage/home.html'
+		templateUrl : 'modules/mainPage/home.html',
+		controller: "servicioController"
 	}).
 	
 	otherwise({
