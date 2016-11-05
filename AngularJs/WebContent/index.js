@@ -10,11 +10,12 @@ angular.module('ingreso', []);
 angular.module('productos', []);
 angular.module('proveedores', []);
 angular.module('login', []);
+angular.module('serviciosRest', []);
 
 // se agregan los modulos
 var mainApp = angular.module('mainApp', [
     'ngRoute', 'ngResource', 
-    'servicio',
+    'serviciosRest',
     'tenan', 'usuario', 'inventario', 
     'ventas', 'facturacion', 'ingreso', 
     'productos', 'proveedores', 'login'
@@ -71,8 +72,7 @@ mainApp.config([ '$routeProvider', function($routeProvider) {
 	}).
 	
 	when('/home', {
-		templateUrl : 'modules/mainPage/home.html',
-		controller: "servicioController"
+		templateUrl : 'modules/mainPage/home.html'
 	}).
 	
 	otherwise({

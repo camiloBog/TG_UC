@@ -1,19 +1,45 @@
 'use strict';
 
-angular.module('login')
+angular.module('login', ['serviciosRest'])
 
-.controller('loginController', ['$scope', 'testServiceRequest',
-    function($scope, testServiceRequest) {
+.controller('loginController', ['$scope','serviciosRestRequest',loginController]);
+
+function loginController($scope, serviciosRestRequest) {
+	
+//	$scope.posts={};
+	$scope.loginFunction = function(){
 		
-		$scope.loginFunction = function() {
+		//alert("login");
+		
+		var json = serviciosRestRequest.validar().success(function (data){
 			
-			alert("ok");
+			alert("success: "+data);
+			$scope.posts=data;
 			
-		};
+//			$scope.posts=data; // Asignaremos los datos de todos los posts
+//			$scope.posts.exist=1;
+		});
+		
+		alert("json: "+json);
 		
 		
-	}
-]);
+		
+		
+		
+	};
+	
+//	$scope.getPost = function(){
+//		$scope.unPost={};
+//		testRequest.post($scope.post_id).success(function (data){
+//			$scope.unPost=data; // Asignaremos los datos del post
+//			$scope.unPost.exist=1;
+//			$scope.posts.exist=0;
+//		});
+//	};
+	
+}
+
+
 
 /////////////////////////////////////////////////////
 //'use strict';
