@@ -12,6 +12,7 @@ angular.module('proveedores', []);
 angular.module('login', []);
 angular.module('serviciosRest', []);
 
+//Texto de prueba
 // se agregan los modulos
 var mainApp = angular.module('mainApp', [
     'ngRoute', 'ngResource', 
